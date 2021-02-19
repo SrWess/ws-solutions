@@ -1,0 +1,77 @@
+@import "../../styles/colors";
+
+form {
+  padding: 25px;
+}
+
+form h1 {
+  color: #6d6d6d;
+}
+
+form fieldset {
+  margin-top: 14px;
+  border: 0;
+}
+
+select,
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+
+  padding: 8px;
+
+  outline: none;
+
+  color: #424242;
+
+  &:focus {
+    border: 1px solid $purple-primary;
+  }
+}
+
+.field {
+  width: 100%;
+}
+
+.field-group {
+  display: flex;
+}
+
+.field-group label {
+  font-family: 'Poppins', sans-serif;
+  color: #707070;
+  font-size: 0.9rem;
+}
+
+.field + .field {
+  margin-left: 25px;
+}
+
+.field-alarms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-alarms {
+  display: flex;
+}
+
+.item-alarm + .item-alarm {
+  margin-left: 10px;
+}
+
+.field-group-timeDate {
+  width: 95%;
+
+  display: flex;
+  align-items: center;  
+}
+
+.field-group-timeDate label {
+  display: block;
+}

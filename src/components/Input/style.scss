@@ -1,0 +1,25 @@
+@import '../../styles/colors';
+
+.field p {
+  font-family: 'Poppins', sans-serif;
+  color: #707070;
+  font-size: 0.9rem;
+}
+
+.field input { 
+  width: 100%;
+
+  border-radius: 5px;
+  border: 1px solid #E3E3E3;
+
+  padding: 8px;
+
+  outline: none;
+
+  color: #424242;
+
+  &:focus {
+    border: 1px solid $purple-primary;
+  }
+
+}

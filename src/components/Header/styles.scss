@@ -1,0 +1,51 @@
+@import '../../styles/colors';
+
+header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: $white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+  padding: 10px;
+
+  // position: fixed;
+}
+
+.logo a {
+  color: $purple-primary;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: -0.05em;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-user {
+  height: 50px;
+  width: 50px;
+
+  border-radius: 50%;
+
+  background: $purple-primary;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 25px;
+
+  color: white;
+  font-weight: bold;
+}
+
+.menu a {
+  height: 25px;
+}
