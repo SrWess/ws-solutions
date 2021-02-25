@@ -97,12 +97,16 @@ input[type="time"]::-webkit-calendar-picker-indicator  {
 
 .field-group-order textarea {
   margin-bottom: 24px;
-  min-height: 150px;
-  max-height: 350px;
+  min-height: 100px;
+  max-height: 250px;
   resize: vertical;
 }
 
 .label-order {
   display: flex;
   flex-direction: column;
+}
+
+.field-group-order div input {
+  margin-bottom: 24px;
 }

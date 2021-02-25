@@ -1,5 +1,3 @@
-import { VscCircleFilled } from "react-icons/vsc";
-
 import Input from "../Input";
 import Select from "../Select";
 
@@ -197,12 +195,7 @@ export default function Form() {
               <textarea name="trativa" id="trativa"/>
             </label>
           </div>
-          <div className="field-order">
-            <label className="label-order">
-              Possível Solução
-              <textarea name="solucaoos" id="solucaoos"/>
-            </label>
-          </div>
+          <Input title="Possível Solução" nameInput="solucao" />
           <div className="field-order">
             <label className="label-order">
               Última O.S

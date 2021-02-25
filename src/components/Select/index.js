@@ -1,7 +1,3 @@
-// import "./style.scss";
-
-import { VscCircleFilled } from 'react-icons/vsc'
-
 export default function Input({ title, nameInput, optionsValues }) {
 
   return (
