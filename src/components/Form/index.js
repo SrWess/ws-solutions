@@ -1,3 +1,5 @@
+import { VscCircleFilled } from "react-icons/vsc";
+
 import Input from "../Input";
 import Select from "../Select";
 
@@ -154,6 +156,58 @@ export default function Form() {
               <label for="timeAlarm">Horário</label>
               <input id="timeAlarm" type="time" name="date" />
             </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div className="field-group">
+          <Input title="Slot" nameInput="slot" />
+          <Input title="Pon" nameInput="pon" />
+          <Input title="ID" nameInput="idonu" />
+          <Input title="Sinal" nameInput="sinalonu" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div className="field-group">
+          <Input title="Sinal de Retorno" nameInput="sinalretorno" />
+          <Input title="Tx" nameInput="tx" />
+          <Input title="Cabo" nameInput="cabo" />
+          <Select
+            title="PPPoe"
+            nameSelect="statuspppoe"
+            optionsValues={optionsStatus}
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div className="field-group-router">
+          <Input title="Marca do Roteador" nameInput="roteadormarca" />
+          <Input title="Modelo do Roteador" nameInput="roteadormodelo" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div className="field-group-order">
+          <div className="field-order">
+            <label className="label-order">
+              Tratativa
+              <textarea name="trativa" id="trativa"/>
+            </label>
+          </div>
+          <div className="field-order">
+            <label className="label-order">
+              Possível Solução
+              <textarea name="solucaoos" id="solucaoos"/>
+            </label>
+          </div>
+          <div className="field-order">
+            <label className="label-order">
+              Última O.S
+              <textarea name="ultimaos" id="ultimaos"/>
+            </label>
           </div>
         </div>
       </fieldset>

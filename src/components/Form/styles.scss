@@ -15,7 +15,8 @@ form fieldset {
 
 select,
 input[type="date"],
-input[type="time"] {
+input[type="time"],
+textarea {
   width: 100%;
 
   border-radius: 5px;
@@ -40,7 +41,8 @@ input[type="time"] {
   display: flex;
 }
 
-.field-group label {
+.field-group label,
+.field-group-order label {
   font-family: 'Poppins', sans-serif;
   color: #707070;
   font-size: 0.9rem;
@@ -59,10 +61,17 @@ input[type="time"] {
 
 .list-alarms {
   display: flex;
+  margin-top: 10px;
 }
 
 .item-alarm + .item-alarm {
   margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.item-alarm > label {
+  margin-left: 5px;
 }
 
 .field-group-timeDate {
@@ -74,4 +83,26 @@ input[type="time"] {
 
 .field-group-timeDate label {
   display: block;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator  {
+  filter: invert(0.8);
+}
+
+.field-group-router {
+  display: flex;
+  width: 49%;
+}
+
+.field-group-order textarea {
+  margin-bottom: 24px;
+  min-height: 150px;
+  max-height: 350px;
+  resize: vertical;
+}
+
+.label-order {
+  display: flex;
+  flex-direction: column;
 }
