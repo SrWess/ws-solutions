@@ -4,14 +4,18 @@ import './styles/global.scss'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header/>
 
       <div className="wrapper">
         <Form/>
       </div>
       
-    </div>
+      <footer>
+        <p>{`Copyright ©${new Date().getFullYear()} WS Solutions | All rights reserved`}</p>
+      </footer>
+    
+    </>
   );
 }
 

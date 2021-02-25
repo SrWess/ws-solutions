@@ -32,3 +32,17 @@ a {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $purple-2;
+  color: $white;
+
+  padding: 1.5rem;
+
+  font-size: 0.9rem;
+  font-weight: 300;
+}
